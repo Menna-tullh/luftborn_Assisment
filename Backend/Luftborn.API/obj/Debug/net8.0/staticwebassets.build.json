@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RdC0EOBDqiciw5mpsKA/jSqjbTw4pIqOHAgzgAh7K3c=",
+  "Source": "Luftborn.API",
+  "BasePath": "_content/Luftborn.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

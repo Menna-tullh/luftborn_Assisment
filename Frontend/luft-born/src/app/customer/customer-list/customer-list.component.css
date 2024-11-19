@@ -1,0 +1,203 @@
+/* Global Typography */
+* {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.title-section h1 {
+    font-size: 24px;
+    color: #2c2c2c;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+/* Table Container Styling */
+.table-responsive {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin: 20px;
+    overflow: hidden;
+}
+
+/* Table General Styling */
+.mat-elevation-z8 {
+    width: 100%;
+    background: white;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* Header Styling */
+th.mat-header-cell {
+    background: #f8f9fa !important;
+    color: #495057 !important;
+    padding: 16px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid #e9ecef;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Row Styling */
+td.mat-cell {
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #495057;
+    border-bottom: 1px solid #f1f3f5;
+    line-height: 1.5;
+}
+
+/* Alternating Row Colors */
+tr.mat-row {
+    background-color: white;
+    transition: all 0.2s ease;
+}
+
+tr.mat-row:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+tr.mat-row:hover {
+    background-color: #f3f4ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(108, 93, 211, 0.05);
+}
+
+/* Action Buttons Container */
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 0 4px;
+}
+
+/* Action Buttons */
+.action-button {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    min-width: unset;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.action-button:hover {
+    background-color: rgba(108, 93, 211, 0.04);
+}
+
+.action-button i.material-icons {
+    font-size: 20px;
+    color: #6c5dd3;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.action-button:hover i.material-icons {
+    opacity: 1;
+}
+
+.action-button.delete-button:hover i.material-icons {
+    color: #d32f2f;
+}
+
+/* Create Button */
+.create-button {
+    background-color: #6c5dd3;
+    color: white;
+    padding: 0 24px;
+    height: 42px;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: all 0.2s ease;
+}
+
+.create-button:hover {
+    background-color: #5a4cb4;
+    box-shadow: 0 4px 8px rgba(108, 93, 211, 0.2);
+}
+
+.create-button mat-icon {
+    margin-right: 8px;
+}
+
+/* Paginator Styling */
+::ng-deep .mat-paginator {
+    background: white;
+    border-top: 1px solid #f1f3f5;
+}
+
+::ng-deep .mat-paginator-container {
+    min-height: 56px;
+    padding: 0 24px;
+    font-size: 14px;
+    color: #495057;
+}
+
+::ng-deep .mat-paginator-page-size {
+    font-size: 14px;
+    color: #495057;
+}
+
+::ng-deep .mat-paginator-range-label {
+    margin: 0 24px;
+    color: #495057;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .actions-section {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .table-responsive {
+        margin: 10px;
+    }
+    
+    th.mat-header-cell,
+    td.mat-cell {
+        padding: 12px 8px;
+        font-size: 13px;
+    }
+}
+
+.action-button.delete-button:hover {
+  background-color: rgba(211, 47, 47, 0.04);
+}
+
+/* Container Margin */
+:host {
+  display: block;
+  padding: 20px;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+}
+
+/* Page Header Updates */
+.page-header {
+  margin: 20px;
+  border-radius: 16px;
+}
